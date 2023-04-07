@@ -1,0 +1,112 @@
+:root {
+  --background-color: #F6F6F6;
+  --primary-color: #1B3B48;
+  --white: #fff;
+  --grey: #E7E7E7;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  
+}
+
+body {
+  background: var(--background-color);
+  --webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+button {
+  cursor: pointer;
+}
+
+[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.header{
+  background-color: var(--primary-color);
+}
+.header header{
+  padding: 2rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+.contentCard{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+#lugar-imagens{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  min-height: 80vh;
+}
+.buttonGroup{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+.buttonGroup button{
+  padding: 0.5rem 1rem;
+  border: 0;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 0.25rem;
+  font-weight: 600;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+/* .selectContent{
+  width:25%;
+  display: flex;
+  
+  margin-top: 3rem;
+   */
+/* } */
+
+.loading{
+  height: 100vh;
+  width: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.404);
+  display: flex;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
